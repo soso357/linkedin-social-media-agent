@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agents": {
+    "linkedin-marketer": {
+      "description": "Daily LinkedIn marketing content agent: researches fresh marketing/AI news, writes operator-style posts, builds visuals, QC-checks, publishes via LinkedIn API, records history.",
+      "mode": "all"
+    }
+  },
+  "commands": {
+    "linkedin-daily": {
+      "description": "Run the daily LinkedIn workflow: research → write → visual → QC → publish → record",
+      "agent": "linkedin-marketer"
+    }
+  }
+}
